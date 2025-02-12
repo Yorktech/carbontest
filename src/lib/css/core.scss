@@ -1,0 +1,94 @@
+@use '@carbon/colors';
+@use '@carbon/type';
+
+.top-div {
+	//@at-rootbackground-color: colors.$magenta-20;
+	//background-color: white;
+	
+	//background-color: #007bff;
+	//color:white;
+	
+	background-color:#F4F4F4;
+	color:black;
+
+	position: relative;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	margin: -2rem;
+	//height: 150px;
+	padding: 0.5rem;
+
+}
+.main_content {
+	left: 0;
+	padding: 0;
+	margin-left: 0;
+	margin-top: 3rem;
+}
+
+	$primary-color: #0f62fe;
+	ul  {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    //background-color: #f1f1f1;
+}
+	li{
+		border: #24a0ed;
+	}
+	li>a {
+    display: block;
+    color: #525252;
+    padding: 0.8rem 0 0.8rem 16px;
+    text-decoration: none;
+	width: 100%;
+	font-size: 1rem;
+	border-left: 3px solid #E0E0E0;
+}
+li>a.active{
+	color: black;
+	border-left: 3px solid $primary-color;
+}
+li>a.active:hover{
+	cursor:default;
+	color: black;
+	border-left: 3px solid $primary-color;
+}
+li>a:hover{
+	//background-color: #e5e5e5;
+	border-left: 3px solid darkgray;
+	color: black;
+}
+.feed-card {
+		box-sizing: border-box;
+		background: #ffffff;
+		border: 1px solid #acaca7;
+		margin-top: 1rem;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+	}
+
+	.imageflex { display: flex; }
+	.imageflexcontent { margin-left: 1rem; margin-top: 0; }
+	.head_text_bold{
+		font-size: 32px;
+		vertical-align: text-top;
+	
+	}
+	.head_text{
+		font-size: 32px;
+		vertical-align: text-top;
+		font-weight:200;
+	}
+
+	 /* Custom class to override Carbon's styles */
+	 :global(.stat-full-width-btn-set) {
+		width: 100%; /* Ensure ButtonSet takes full width */
+	  }
+	
+	  :global(.stat-full-width-btn) {
+		width: 100% !important; /* Ensure each button takes full width */
+		max-width: none !important; /* Remove Carbon's max-width */
+		padding: 10px !important;
+		margin-top: 10px !important; /* Space between buttons */
+	  }

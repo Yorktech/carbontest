@@ -1,0 +1,5 @@
+/* src/app.css */
+@use '@carbon/styles/scss/styles' with (
+  $carbon--theme: $carbon--theme--g100  // Replace with g90 or g10 for other themes
+);
+@import '@carbon/styles/css/all.css';
