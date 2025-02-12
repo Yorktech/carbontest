@@ -19,6 +19,7 @@
       TileGroup,
       RadioTile,
       Theme,
+      Button,
     RadioButtonGroup,
     RadioButton,
     } from "carbon-components-svelte";
@@ -97,14 +98,39 @@
           </TileGroup>
         </Column>
       </Row>
+
+      <Row padding="1rem">
+        <Column>
+          <h1>Content</h1>
+          <p>
+            This is the main content area. You can put the main content here.
+          </p>
+        </Column>
+        </Row>
+        <Row padding="1rem">
+            <RadioButtonGroup legendText="Carbon theme" bind:selected={theme}>
+                {#each ["white", "g10", "g80", "g90", "g100"] as value}
+                    <RadioButton labelText={value} {value} />
+                {/each}
+            </RadioButtonGroup>
+        </Row>
+        <hr>
+        <Row padding="1rem">
+            <Column>
+                <Button>Primary button</Button>
+            </Column>
+            </Row>
+        <Row>
+            <Column>
+                <h1>Welcome to SvelteKit</h1>
+                <p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+
+            </Column>
+        </Row>
+       
+
     </Grid>
   </Content>
 
-<RadioButtonGroup legendText="Carbon theme" bind:selected={theme}>
-  {#each ["white", "g10", "g80", "g90", "g100"] as value}
-    <RadioButton labelText={value} {value} />
-  {/each}
-</RadioButtonGroup>
 
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+
