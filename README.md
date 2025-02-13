@@ -1,6 +1,6 @@
 # Welcome
 
-Everything you need to build an IBM Carbon UI Sveltekit project, powered by [`sv`](https://github.com/sveltejs/cli).
+Everything you need to build an IBM Carbon UI Sveltekit project
 Clone the repo and 
 ```
 npm install
