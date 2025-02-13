@@ -1,22 +1,15 @@
-# sv
+# Welcome
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
-
-## Creating a project
-
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
+Everything you need to build an IBM Carbon UI Sveltekit project, powered by [`sv`](https://github.com/sveltejs/cli).
+Clone the repo and 
 ```
+npm install
+```
+
+All the IBM Carbon fonts, sveltekit controls, icons etc are all installed in the project
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
 ```bash
 npm run dev
